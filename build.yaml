@@ -18,3 +18,6 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+  - board: adafruit_qt_py_rp2040
+    shield: eloquent_misdirection
