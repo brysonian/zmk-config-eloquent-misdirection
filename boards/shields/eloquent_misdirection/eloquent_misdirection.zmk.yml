@@ -6,3 +6,4 @@ url: https://github.com/brysonian/zmk-config-eloquent-misdirection/
 requires: [adafruit_qt_py_rp2040]
 features:
   - keys
+  - handwired
