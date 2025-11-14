@@ -35,7 +35,9 @@
                 <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                 <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                 <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+                <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+                <&stemma_connector 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&stemma_connector 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     
     col-gpios = <&shifter 1 GPIO_ACTIVE_HIGH>,
                 <&shifter 2 GPIO_ACTIVE_HIGH>,
