@@ -18,7 +18,8 @@
   };
 };
 
-// &zephyr_i2c {
+&zephyr_i2c {
+    status = "okay";
 // 	stemma_connector: stemma_connector {
 //     status = "okay";
 // 		compatible = "zmk,stemma-qt-connector";
@@ -28,7 +29,7 @@
 // 		gpio-map-pass-thru = < 0x0 0x3f >;
 // 		gpio-map = < 0x0 0x0 &gpio0 0x15 0x0 >, < 0x1 0x0 &gpio0 0x14 0x0 >;
 // 	};
-// };
+};
 
 / {
   chosen {
@@ -56,8 +57,8 @@
                 <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                 <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                 <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&xiao_d 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&xiao_d 23 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+                <&stemma_connector 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&stemma_connector 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     
     col-gpios = <&shifter 1 GPIO_ACTIVE_HIGH>,
                 <&shifter 2 GPIO_ACTIVE_HIGH>,
