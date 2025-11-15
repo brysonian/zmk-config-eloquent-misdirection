@@ -18,17 +18,17 @@
   };
 };
 
-&zephyr_i2c {
-	stemma_connector: stemma_connector {
-    status = "okay";
-		compatible = "zmk,stemma-qt-connector";
-    gpio-controller;
-		#gpio-cells = <2>;
-		gpio-map-mask = < 0xffffffff 0xffffffc0 >;
-		gpio-map-pass-thru = < 0x0 0x3f >;
-		gpio-map = < 0x0 0x0 &gpio0 0x15 0x0 >, < 0x1 0x0 &gpio0 0x14 0x0 >;
-	};
-};
+// &zephyr_i2c {
+// 	stemma_connector: stemma_connector {
+//     status = "okay";
+// 		compatible = "zmk,stemma-qt-connector";
+//     gpio-controller;
+// 		#gpio-cells = <2>;
+// 		gpio-map-mask = < 0xffffffff 0xffffffc0 >;
+// 		gpio-map-pass-thru = < 0x0 0x3f >;
+// 		gpio-map = < 0x0 0x0 &gpio0 0x15 0x0 >, < 0x1 0x0 &gpio0 0x14 0x0 >;
+// 	};
+// };
 
 / {
   chosen {
