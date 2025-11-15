@@ -18,7 +18,7 @@
   };
 };
 
-&i2c0 {
+&zephyr_i2c {
 	stemma_connector: stemma_connector {
     status = "okay";
 		compatible = "zmk,stemma-qt-connector";
