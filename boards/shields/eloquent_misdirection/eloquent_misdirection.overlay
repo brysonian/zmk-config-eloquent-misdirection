@@ -18,11 +18,7 @@
   };
 };
 
-/ {
-  chosen {
-    zmk,physical-layout = &physical_layout0;
-  };
-
+&zephyr_i2c {
 	stemma_connector: stemma_connector {
 		compatible = "stemma-qt-connector";
 		#gpio-cells = < 0x2 >;
@@ -30,6 +26,20 @@
 		gpio-map-pass-thru = < 0x0 0x3f >;
 		gpio-map = < 0x0 0x0 &gpio0 0x15 0x0 >, < 0x1 0x0 &gpio0 0x14 0x0 >;
 	};
+}
+
+/ {
+  chosen {
+    zmk,physical-layout = &physical_layout0;
+  };
+
+	// stemma_connector: stemma_connector {
+	// 	compatible = "stemma-qt-connector";
+	// 	#gpio-cells = < 0x2 >;
+	// 	gpio-map-mask = < 0xffffffff 0xffffffc0 >;
+	// 	gpio-map-pass-thru = < 0x0 0x3f >;
+	// 	gpio-map = < 0x0 0x0 &gpio0 0x15 0x0 >, < 0x1 0x0 &gpio0 0x14 0x0 >;
+	// };
 
   kscan0: kscan {
     compatible = "zmk,kscan-gpio-matrix";
