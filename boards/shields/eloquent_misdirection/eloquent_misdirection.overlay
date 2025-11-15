@@ -18,7 +18,7 @@
   };
 };
 
-&zephyr_i2c {
+&i2c0 {
 	stemma_connector: stemma_connector {
 		compatible = "stemma-qt-connector";
 		#gpio-cells = < 0x2 >;
